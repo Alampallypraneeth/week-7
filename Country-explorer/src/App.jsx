@@ -55,7 +55,7 @@ function App(){
             </svg>
           </div>
           <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-            Global Explorer
+            Country Explorer
           </h1>
           <p className="mt-3 max-w-md mx-auto text-base text-slate-500 sm:text-lg md:mt-4 md:max-w-3xl">
             Discover details about countries across the world with our minimal, modern dashboard.
