@@ -4,7 +4,7 @@ This repository contains two small frontend projects built with React and Vite. 
 
 Projects
 - Country-explorer: A simple country information explorer. Search for countries, browse results, and view details for a selected country. Implemented with React, Vite, and Tailwind CSS. See [Country-explorer](Country-explorer) and its [package.json](Country-explorer/package.json#L1).
-- Product: A product listing/demo app with routing, header/footer, and product pages. Built with React, Vite, Tailwind CSS, and `react-router`. See [Product](Product) and its [package.json](Product/package.json#L1).
+- Product: A premium minimal e-commerce storefront app called **QUICKSHOP**, featuring interactive landing pages, catalog search/filtering, full product detail pages, and custom forms. Built with React, Vite, Tailwind CSS, and `react-router`. See [Product](Product) and its [README](Product/README.md).
 
 Tech stack
 - React (UI)
