@@ -1,16 +1,60 @@
-# React + Vite
+# Country Explorer — Modern Global Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Country Explorer** is a high-end, responsive, minimal light-themed web dashboard for browsing and exploring countries of the world. It provides real-time information about capitals, population sizes, and geographic regions.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✦ What is it?
+Country Explorer is a minimalist react-based single-page dashboard. It leverages asynchronous network request flows to query global country details and presents them inside a clean, modern grid interface. Designed with absolute precision, it utilizes vibrant pastel region-badge categories, soft outlines, high-fidelity hover elevations, and smooth focus-ring searches.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✦ Core Features & How it Works
+1. **Asynchronous API Integration**: 
+   - Dynamically fetches global records on mount using the public **REST Countries API** (`https://restcountries.com/v3.1/all?fields=name,capital,flags,population,region`).
+   - Handles loading states with an animated spinner, and provides visual callouts for connection failures.
+2. **Debounced Real-Time Search**: 
+   - A modern SearchBar component equipped with input hooks that auto-focuses on load.
+   - Leverages a debounced input handler (500ms delay) to avoid layout reflows and unnecessary UI updates during typing.
+3. **Interactive Country Cards**: 
+   - Individual country cards featuring high-fidelity flags, capitals, and populations.
+   - Dynamic map-based region categorizations with custom pastel badge colors:
+     *   **Americas**: Emerald Green (`bg-emerald-50 text-emerald-700`)
+     *   **Europe**: Classic Blue (`bg-blue-50 text-blue-700`)
+     *   **Asia**: Amber Gold (`bg-amber-50 text-amber-700`)
+     *   **Africa**: Rose Red (`bg-rose-50 text-rose-700`)
+     *   **Oceania**: Royal Purple (`bg-purple-50 text-purple-700`)
+     *   **Antarctic**: Slate Gray (`bg-slate-50 text-slate-700`)
+   - High-fidelity micro-interactions including a smooth scale zoom on flag images (`group-hover:scale-105`) and gentle card raises (`hover:-translate-y-1`) with soft shadows on hover.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✦ Technologies Used
+- **React (v19.2.0)**: Powers the component hierarchy, side-effect hooks (`useEffect`), and state wrappers (`useState`, `useRef`).
+- **Vite**: Acts as the lighting-fast local bundler and HMR dev server.
+- **Tailwind CSS (v4.2.1)**: Utilizes next-generation utility declarations, transition curves, grid alignments, and styling states.
+- **REST Countries API**: Serves as the database endpoint for live demographic information.
+
+---
+
+## ✦ Getting Started (Local Development)
+
+### 1. Installation
+Navigate to the `Country-explorer` directory and install dependencies:
+```bash
+cd Country-explorer
+npm install
+```
+
+### 2. Run Dev Server
+Launch the development environment:
+```bash
+npm run dev
+```
+
+### 3. Production Build
+Compile and bundle the production assets:
+```bash
+npm run build
+```
+The optimized bundle will be compiled inside the local `dist/` directory.
