@@ -14,7 +14,7 @@ function Header() {
               </svg>
             </span>
             <span className="text-xl font-extrabold tracking-widest text-zinc-900 group-hover:text-zinc-600 transition-colors duration-200">
-              ATELIER
+              QUICKSHOP
             </span>
           </NavLink>
 

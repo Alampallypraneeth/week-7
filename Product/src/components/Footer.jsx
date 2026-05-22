@@ -8,7 +8,7 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand Info */}
           <div className="md:col-span-2">
-            <span className="text-lg font-bold tracking-widest text-zinc-900">ATELIER</span>
+            <span className="text-lg font-bold tracking-widest text-zinc-900">QUICKSHOP</span>
             <p className="mt-4 text-sm text-zinc-500 max-w-sm leading-relaxed">
               A curated destination for minimalist essentials, high-end craftsmanship, and timeless styles designed to elevate your everyday lifestyle.
             </p>
@@ -41,14 +41,14 @@ function Footer() {
                 </Link>
               </li>
               <li className="text-sm text-zinc-400">
-                Email: support@atelier.com
+                Email: support@quickshop.com
               </li>
             </ul>
           </div>
         </div>
 
         <div className="mt-12 pt-6 border-t border-zinc-100 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-zinc-400">&copy; {new Date().getFullYear()} ATELIER Inc. All rights reserved.</p>
+          <p className="text-xs text-zinc-400">&copy; {new Date().getFullYear()} QUICKSHOP Inc. All rights reserved.</p>
           <div className="flex gap-4">
             <span className="text-xs text-zinc-400 hover:text-zinc-600 cursor-pointer transition-colors">Privacy Policy</span>
             <span className="text-xs text-zinc-400 hover:text-zinc-600 cursor-pointer transition-colors">Terms of Service</span>
